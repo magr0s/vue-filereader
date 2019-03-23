@@ -29,6 +29,13 @@ Vue.component(FileReader.name, FileReader)
 
 **Default tag**
 ```html
+<!-- 
+  Output data:
+  array - ArrayBuffer
+  binary - BinaryString
+  data - DataUrl
+  text - TextString (default)
+-->
 <file-reader
   accept=".txt"
   output="binary"

@@ -45,7 +45,14 @@ export default {
 
       const reader = new FileReader()
 
-      reader.onload = e => (this.$emit('reader-load', e.target.result))
+      reader.onload = (e) => {
+        const evtData = {
+          file,
+          data: e.target.result
+        }
+
+        this.$emit('reader-load', evtData)
+      }
 
       reader.onerror = e => (new Error(`Error reading ${file.name}: ${e.target.result}`))
 

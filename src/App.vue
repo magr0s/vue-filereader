@@ -49,8 +49,9 @@ export default {
   },
 
   methods: {
-    fileLoaded (data) {
-      this.byteLength = data.byteLength
+    fileLoaded (result) {
+      console.log(result)
+      // this.byteLength = data.byteLength
     }
   }
 }

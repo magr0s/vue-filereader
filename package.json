@@ -1,7 +1,7 @@
 {
   "name": "vue-filereader",
   "description": "FileReader component for Vue.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "main": "dist/vue-filereader.common.js",
   "unpkg": "dist/vue-filereader.umd.js",
